@@ -24,6 +24,7 @@
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Inicio</a></li>
                 <li><a href="#services" class="menu-btn">Planes</a></li>
+                <li><a href="#videos" class="menu-btn">Videos</a></li>
                 <li><a href="#contact" class="menu-btn">Contacto</a></li>
             </ul>
             <div class="menu-btn">
@@ -75,123 +76,220 @@
     <section class="services">
         <div class="max-width">
             <h2 class="title">Planes</h2>
+
             <div class="serv-content">
 
                 <div class="popup" id="popup-1">
                     <div class="overlay"></div>
                     <div class="content">
-                      <div class="close-btn" onclick="togglePopup()">×</div>
-                      <h1>Title</h1>
+                        <div class="close-btn-father">
+                            <div class="close-btn-son" onclick="togglePopup()">×</div>
+                        </div>
+                      
+                        
+                      <div class="title-popup-father">
+                        <h1 class="title-popup-son" >Title</h1>
+                      </div>
+                      
                       <br>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
-                          excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias 
-                          inventore nulla atque debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex excepturi, 
-                          dolore molestias beatae atque consectetur eos, quasi maxime veritatis rem harum laboriosam temporibus 
-                          obcaecati, quo nesciunt saepe quam laudantium quos sed eveniet corrupti!</p>
+                      <div class="paragraph-popup-father">
+                        <p class="paragraph-popup-son" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.! 
+                            dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.! 
+                            dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis alias inventore nulla atque debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.!</p>
+                      </div>
+                      <div class="button-popup-father">
+                        <button class="button-popup-son" onclick="togglePopup()"> <a class="button-text-popup" href="#contact">Contacto</a> </button>
+                      </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line"></i>
-                        <div class="text">Ohana</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                        <button onclick="togglePopup()"> <strong>more info</strong> </button>
+
+                        <div class="service-title-father">
+                            <div class="service-title-son">Ohana</div>
+                        </div>
+                        <div class="service-paragraph-father">
+                            <p class="service-paragraph-son">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Rem quia sunt, quasi quo illo enim dolor sit amet consectetur, adipisicing.</p>
+                        </div>
+                        <div class="button-father">
+                            <button class="button-son" onclick="togglePopup()"> <strong>Más info</strong> </button>
+                        </div>
                     </div>
                 </div>
-
 
 
                 <div class="popup" id="popup-2">
                     <div class="overlay"></div>
                     <div class="content">
-                      <div class="close-btn" onclick="togglePopup2()">×</div>
-                      <h1>Title</h1>
+                        <div class="close-btn-father">
+                            <div class="close-btn-son" onclick="togglePopup2()">×</div>
+                        </div>
+                      
+                        
+                      <div class="title-popup-father">
+                        <h1 class="title-popup-son" >Title</h1>
+                      </div>
+                      
                       <br>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
-                          excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias 
-                          inventore nulla atque debitis. Lorem ipsum dolor sit amet!</p>
+                      <div class="paragraph-popup-father">
+                        <p class="paragraph-popup-son" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.! 
+                            dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.! 
+                            dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis alias inventore nulla atque debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.!</p>
+                      </div>
+                      <div class="button-popup-father">
+                        <button class="button-popup-son" onclick="togglePopup2()"> <a class="button-text-popup" href="#contact">Contacto</a> </button>
+                      </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line"></i>
-                        <div class="text">Ohana</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                        <button onclick="togglePopup2()"> <strong>more info</strong> </button>
+
+                        <div class="service-title-father">
+                            <div class="service-title-son">Ohana</div>
+                        </div>
+                        <div class="service-paragraph-father">
+                            <p class="service-paragraph-son">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Rem quia sunt, quasi quo illo enim dolor sit amet consectetur, adipisicing.</p>
+                        </div>
+                        <div class="button-father">
+                            <button class="button-son" onclick="togglePopup2()"> <strong>Más info</strong> </button>
+                        </div>
                     </div>
                 </div>
-
 
 
                 <div class="popup" id="popup-3">
                     <div class="overlay"></div>
                     <div class="content">
-                      <div class="close-btn" onclick="togglePopup3()">×</div>
-                      <h1>Title</h1>
+                        <div class="close-btn-father">
+                            <div class="close-btn-son" onclick="togglePopup3()">×</div>
+                        </div>
+                      
+                        
+                      <div class="title-popup-father">
+                        <h1 class="title-popup-son" >Title</h1>
+                      </div>
+                      
                       <br>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
-                          excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias 
-                          inventore nulla atque debitis. Lorem ipsum dolor sit amet! Lorem ipsum dolor sit amet consectetur 
-                          adipisicing elit. Sed, illum.</p>
+                      <div class="paragraph-popup-father">
+                        <p class="paragraph-popup-son" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias 
+                            inventore nulla atque debitis.!</p>
+                      </div>
+                      <div class="button-popup-father">
+                        <button class="button-popup-son" onclick="togglePopup3()"> <a class="button-text-popup" href="#contact">Contacto</a> </button>
+                      </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Ohana</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                        <button onclick="togglePopup3()"> <strong>more info</strong> </button>
+                        <i class="fas fa-chart-line"></i>
+
+                        <div class="service-title-father">
+                            <div class="service-title-son">Ohana</div>
+                        </div>
+                        <div class="service-paragraph-father">
+                            <p class="service-paragraph-son">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Rem quia sunt, quasi quo illo enim dolor sit amet consectetur, adipisicing.</p>
+                        </div>
+                        <div class="button-father">
+                            <button class="button-son" onclick="togglePopup3()"> <strong>Más info</strong> </button>
+                        </div>
                     </div>
                 </div>
+
+
                 
                 <div class="popup" id="popup-4">
                     <div class="overlay"></div>
                     <div class="content">
-                      <div class="close-btn" onclick="togglePopup4()">×</div>
-                      <h1>Title</h1>
+                        <div class="close-btn-father">
+                            <div class="close-btn-son" onclick="togglePopup4()">×</div>
+                        </div>
+                    
+                      <div class="title-popup-father">
+                        <h1 class="title-popup-son" >Title</h1>
+                      </div>
+                      
                       <br>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
-                          excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias 
-                          inventore nulla atque debitis. Lorem ipsum dolor sit amet! Lorem ipsum dolor sit amet consectetur 
-                          adipisicing elit. Sed, illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam 
-                          officia maxime, inventore odio voluptatum aspernatur esse tempore distinctio rerum?.</p>
+                      <div class="paragraph-popup-father">
+                        <p class="paragraph-popup-son" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias 
+                            inventore nulla atque debitis.!</p>
+                      </div>
+                      <div class="button-popup-father">
+                        <button class="button-popup-son" onclick="togglePopup4()"> <a class="button-text-popup" href="#contact">Contacto</a> </button>
+                      </div>
                     </div>
                 </div>
-
 
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Ohana</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                        <button onclick="togglePopup4()"> <strong>more info</strong> </button>
+                        <i class="fas fa-chart-line"></i>
+
+                        <div class="service-title-father">
+                            <div class="service-title-son">Ohana</div>
+                        </div>
+                        <div class="service-paragraph-father">
+                            <p class="service-paragraph-son">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Rem quia sunt, quasi quo illo enim dolor sit amet consectetur, adipisicing.</p>
+                        </div>
+                        <div class="button-father">
+                            <button class="button-son" onclick="togglePopup4()"> <strong>Más info</strong> </button>
+                        </div>
                     </div>
                 </div>
-
 
                 <div class="popup" id="popup-5">
                     <div class="overlay"></div>
                     <div class="content">
-                      <div class="close-btn" onclick="togglePopup5()">×</div>
-                      <h1>Title</h1>
+                        <div class="close-btn-father">
+                            <div class="close-btn-son" onclick="togglePopup5()">×</div>
+                        </div>
+                      
+                        
+                      <div class="title-popup-father">
+                        <h1 class="title-popup-son" >Title</h1>
+                      </div>
+                      
                       <br>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
-                          excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias 
-                          inventore nulla atque debitis. Lorem ipsum dolor sit amet! Lorem ipsum dolor sit amet consectetur 
-                          adipisicing elit. Sed, illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam 
-                          officia maxime, inventore odio.</p>
+                      <div class="paragraph-popup-father">
+                        <p class="paragraph-popup-son" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.! 
+                            dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis. Lorem ipsum dolor sit amet consectetur</p>
+                      </div>
+                      <div class="button-popup-father">
+                        <button class="button-popup-son" onclick="togglePopup5()"> <a class="button-text-popup" href="#contact">Contacto</a> </button>
+                      </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Ohana</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                        <button onclick="togglePopup5()"> <strong>more info</strong> </button>
+                        <i class="fas fa-chart-line"></i>
+
+                        <div class="service-title-father">
+                            <div class="service-title-son">Ohana</div>
+                        </div>
+                        <div class="service-paragraph-father">
+                            <p class="service-paragraph-son">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Rem quia sunt, quasi quo illo enim dolor sit amet consectetur, adipisicing.</p>
+                        </div>
+                        <div class="button-father">
+                            <button class="button-son" onclick="togglePopup5()"> <strong>Más info</strong> </button>
+                        </div>
                     </div>
                 </div>
                 
@@ -200,28 +298,43 @@
                 <div class="popup" id="popup-6">
                     <div class="overlay"></div>
                     <div class="content">
-                      <div class="close-btn" onclick="togglePopup6()">×</div>
-                      <h1>Title</h1>
+                        <div class="close-btn-father">
+                            <div class="close-btn-son" onclick="togglePopup6()">×</div>
+                        </div>
+                      
+                        
+                      <div class="title-popup-father">
+                        <h1 class="title-popup-son" >Title</h1>
+                      </div>
+                      
                       <br>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
-                          excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias 
-                          inventore nulla atque debitis. Lorem ipsum dolor sit amet! Lorem ipsum dolor sit amet consectetur 
-                          adipisicing elit. Sed, illum Lorem ipsum dolor sit amet.</p>
+                      <div class="paragraph-popup-father">
+                        <p class="paragraph-popup-son" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium 
+                            excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias 
+                            inventore nulla atque debitis.!</p>
+                      </div>
+                      <div class="button-popup-father">
+                        <button class="button-popup-son" onclick="togglePopup6()"> <a class="button-text-popup" href="#contact">Contacto</a> </button>
+                      </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Ohana</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                        <button onclick="togglePopup6()"> <strong>more info</strong> </button>
+                        <i class="fas fa-chart-line"></i>
+
+                        <div class="service-title-father">
+                            <div class="service-title-son">Ohana</div>
+                        </div>
+                        <div class="service-paragraph-father">
+                            <p class="service-paragraph-son">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Rem quia sunt, quasi quo illo enim dolor sit amet consectetur, adipisicing.</p>
+                        </div>
+                        <div class="button-father">
+                            <button class="button-son" onclick="togglePopup6()"> <strong>Más info</strong> </button>
+                        </div>
                     </div>
                 </div>
-
-
-               
-
                 
 
                </div>
@@ -230,7 +343,10 @@
     </section>
 
     <!-- Job Posting Section begins -->
-
+    <p id="videos"></p>
+    <br>
+    <br>
+    <br>
     <section class="job">
         <div class="max-width">
             <h2 class="title">Únete a nuestro equipo</h2>
@@ -238,6 +354,173 @@
             <h4 class="description"> envianos un mensaje </h4>
         </div>
     </section>
+
+    <!-- Carousel videos -->
+    <div class="Carousel">
+        <h2>Mis videos</h2>
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <!-- <h4><small>Share Your Message</small>Watch</h4> -->
+                            <picture>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/9iHM6X6uUH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <!-- <h4><small>Share Your Message</small>Watch</h4> -->
+                            <picture>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/TW9d8vYrVFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <!-- <h4><small>Share Your Message</small>Watch</h4> -->
+                            <picture>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2FurKFuanLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/uJp6wz4gAio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-mJ7sxF92YQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="slick">
+                    <div>
+                        <a href="/">
+                            <picture>
+                                <iframe width="310" height="215" src="https://www.youtube.com/embed/iwaUan_AA2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </picture>
+                        </a>
+                    </div>
+                </div> -->
+
+                <!-- <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./images/7.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./images/8.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./images/9.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./images/10.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./images/11.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./images/12.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./images/13.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./images/14.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="/">
+                            <h4><small>Share Your Message</small>Watch</h4>
+                            <picture>
+                                <img src="./images/15.jpg" alt="Image">
+                            </picture>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </button>
+        </div>
+    </div>
+
+
+
 
 
     <!-- skills section start -->
@@ -341,28 +624,28 @@
             <h2 class="title">Contacto</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Lorem ipsum</div>
+                    <div class="text">OHANA</div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
                             <div class="info">
                                 <div class="head">Nombre</div>
-                                <div class="sub-title">Claudia Santiago</div>
+                                <div class="sub-title">Lic. Claudia Santiago Torres</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
-                                <div class="head">Dirección</div>
-                                <div class="sub-title">Playa del Carmen</div>
+                                <div class="head">Teléfono</div>
+                                <div class="sub-title">55 5622 3467</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Correo Electronico</div>
-                                <div class="sub-title">abc@gmail.com</div>
+                                <div class="sub-title">claudiasantiago@gmail.com</div>
                             </div>
                         </div>
                     </div>
@@ -374,25 +657,34 @@
 
                     <form action="https://formspree.io/f/xzbygyww" method="POST" id="my-form">
                         <div class="fields">
+
                             <div class="field name">
                                 <!-- <input type="text" id="firstname" placeholder="Nombre" required> -->
                                 <label for="firstName"></label>
                                 <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>   
                             </div>
+
                             <div class="field email">
                                 <!-- <input type="email" placeholder="Correo Electronico" required> -->
                                 <label for="email"></label>
                                 <input type="email" id="email" name="email" placeholder="Correo Electronico" required>      
                             </div>
                         </div>
-                        <!-- <div class="field">
-                            <input type="text" id="subject" placeholder="Tema" required>
-                        </div> -->
+
+
+                        <div class="field phone">
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" name="phone" placeholder="55 5555 5555" required>      
+                        </div>
+
+
+
                         <div class="field textarea">
                             <!-- <textarea cols="30" rows="10" id="message" placeholder="Mensaje.." required></textarea> -->
                             <label for="massage"></label>
                             <textarea textarea  rows="30" cols="30"  name="massage" id="massage" placeholder="Mensaje..." required></textarea>
                         </div>
+
                         <div class="button-area">
                             <button type="submit">Enviar mensaje</button>
                         </div>

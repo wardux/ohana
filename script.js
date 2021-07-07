@@ -2,12 +2,13 @@
 
 $(document).ready(function(){
     $(window).scroll(function(){
+
         // sticky navbar on scroll script
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        }else{
-            $('.navbar').removeClass("sticky");
-        }
+        // if(this.scrollY > 20){
+        //     $('.navbar').addClass("sticky");
+        // }else{
+        //     $('.navbar').removeClass("sticky");
+        // }
         
         // scroll-up button show/hide script
         if(this.scrollY > 500){
@@ -16,6 +17,8 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
+
+
 
     // slide-up script
     $('.scroll-up-btn').click(function(){
@@ -36,42 +39,44 @@ $(document).ready(function(){
     });
 
     // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing", {
+    //     strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing-2", {
+    //     strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 
     // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
-    });
+    // $('.carousel').owlCarousel({
+    //     margin: 20,
+    //     loop: true,
+    //     autoplayTimeOut: 2000,
+    //     autoplayHoverPause: true,
+    //     responsive: {
+    //         0:{
+    //             items: 1,
+    //             nav: false
+    //         },
+    //         600:{
+    //             items: 2,
+    //             nav: false
+    //         },
+    //         1000:{
+    //             items: 3,
+    //             nav: false
+    //         }
+    //     }
+    // });
 });
+
+
 
 
 function togglePopup(){
@@ -114,7 +119,7 @@ window.addEventListener("DOMContentLoaded", function () {
     function success() {
       form.reset();
       status.classList.add("success");
-      status.innerHTML = "Thanks!";
+      status.innerHTML = "Tu mensaje ha sido enviado, gracias!";
     }
   
     function error() {
@@ -148,3 +153,43 @@ window.addEventListener("DOMContentLoaded", function () {
     };
     xhr.send(data);
   }
+
+
+
+
+  
+function App() {}
+
+window.onload = function (event) {
+    var app = new App();
+    window.app = app;
+};
+
+App.prototype.processingButton = function(event) {
+    const btn = event.currentTarget;
+    const slickList = event.currentTarget.parentNode;
+    const track = event.currentTarget.parentNode.querySelector('#track');
+    const slick = track.querySelectorAll('.slick');
+
+    const slickWidth = slick[0].offsetWidth;
+    
+    const trackWidth = track.offsetWidth;
+    const listWidth = slickList.offsetWidth;
+
+    track.style.left == ""  ? leftPosition = track.style.left = 0 : leftPosition = parseFloat(track.style.left.slice(0, -2) * -1);
+
+    btn.dataset.button == "button-prev" ? prevAction(leftPosition,slickWidth,track) : nextAction(leftPosition,trackWidth,listWidth,slickWidth,track)
+}
+
+let prevAction = (leftPosition,slickWidth,track) => {
+    if(leftPosition > 0) {
+        console.log("entro 2")
+        track.style.left = `${-1 * (leftPosition - slickWidth)}px`;
+    }
+}
+
+let nextAction = (leftPosition,trackWidth,listWidth,slickWidth,track) => {
+    if(leftPosition < (trackWidth - listWidth)) {
+        track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
+    }
+}
